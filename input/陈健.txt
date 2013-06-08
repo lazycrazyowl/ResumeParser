@@ -1,0 +1,81 @@
+﻿
+陈健 （男，22）
+百度在线 · 机器学习研发工程师 · 1年经验 · 硕士研究生 · 现居北京 
+手机：18610528571
+邮箱：chenjian900928@gmail.com
+工作经历 
+2012-9 至 今 
+机器学习研发工程师百度在线（互联网行业）
+所在部门：搜索研发部 
+主要是将机器学习的算法应用spider和优化。
+教育经历 
+2011-9 至 2012-7
+人工智能鲁汶大学
+硕士研究生 
+Fundamentals of Artificial Intelligence，Cognitive Science，Programming Languages and Programming Methodologies，Machine Learning and Inductive Inference，Uncertainty Reasoning in Knowledge Systems，Artificial Neural Networks，Data Mining，Text based Information Retrieval，Support Vector Machines: Methods and Applications，Natural Language Processing，Linguistic Theories and Artificial Intelligence。
+2007-9 至 2011-7
+计算机科学与技术安徽大学
+本科 丨班级名次：前30名 
+数据结构，数值分析，计算机组成原理，操作系统，软件工程，计算机系统结构，算法导论，网络原理，编译原理，数据库原理
+语言能力 
+
+英语
+听说：精通 读写：精通 
+证书 
+
+普通话等级证书 大学英语六级 大学英语四级 
+IT技能 
+
+精通的技能
+Matlab python C Java JSP MySQL Linux 
+
+熟悉的技能
+Matlab python C++ 
+项目经验 
+2012-1 至 2013-3
+无线待抓链接分级主要负责人
+简介：使用聚类方法(k-means)方法，并且应用大规模的聚类算法，对库中的待抓取链接进行抓取优先级排序（分站点）。
+成果：明显提高待抓链接的有效性和价值。
+2012-12 至 2013-1
+svm在死链预测的优化开发人员
+简介：使用机器学习的算法，预测死链的概率。方法包括参数选择，模型优化，样本re-sampling.
+成果：明显提高死链预测概率的准确率。
+2012-11 至 2012-12
+机器学习调优环境搭建环境整合
+简介：主要是搭建机器学习的调优环境（包括regression,classification,LTR）的算法优化环境（包括feature selection, parameter selection），评估环境(MSE,ROC,DCG,NDCG)的搭建（本地和hadoop）
+成果：搭建基本的机器学习调优环境，供其他开发人员使用。
+2011-10 至 2012-7
+Pairwise Markov Logic (主要负责人
+简介：For Markov networks (which do not make use of logic) there exists algorithms that transform or “reduce” a higher-order network into an “equivalent” pairwise one. The aim of the thesis is to achieve the same for MLN’s. Then comparing the performance of the MAP inference on non-pairwise MLN and pairwise MLN.
+成果：论文已收录至22nd International Inductive Logic programming(ILP) conference)
+2012-4 至 2012-5
+Hierarchical Text Categorization Application主要负责人
+简介：The task is to build a system for hierarchical categorization of Web pages, where pages are classified by multiple, hierarchically organized classes. For the data we have chosen a subdirectory of the Kids&Teens DMOZ directory. The aim is to use better algorithms and optimalize these algorithms to obtain better performance like recall and precision. Java code.
+2011-12 至 2012-1
+：Hidden Markov Model for gene label estimation(主要负责人
+简介：Via Hidden Markov Model, using belief propagation method for MAP inference to predicate the gene label given the evidence, then try to use the EM algorithm to obtain the optimum predication
+附件/作品 
+
+个人简历-陈健.doc / 99KB 
+校内奖励 
+2011-3
+EXPERTS- Erasmus Mundus Partnership Scholarship鲁汶大学
+EXPERTS Project 提供的奖学金
+2010-9
+三等奖学金安徽大学
+2010-7
+学习优秀奖安徽大学
+鼓励在学习上，特别是专业学习上比较优秀的学生。
+2009-9
+三等奖学金安徽大学
+2008-9
+三等奖学金安徽大学
+其他信息 
+
+兴趣爱好
+足球，推荐系统，社交网络，NLP，机器学习
+
+特长
+乐于学习并且应用新技术
+基本信息
+户　　口：芜湖 

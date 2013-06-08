@@ -247,6 +247,13 @@
             <imports>
                 <import location="../../../../BasicTypeSystem.xml"/>
             </imports>
+            <types>
+                <typeDescription>
+                    <name>com.bole.parser.cv.Education.University</name>
+                    <description>Type defined in com.bole.parser.cv.Education</description>
+                    <supertypeName>uima.tcas.Annotation</supertypeName>
+                </typeDescription>
+            </types>
         </typeSystemDescription>
         <typePriorities>
             <priorityList>
@@ -260,6 +267,15 @@
             <capability>
                 <inputs/>
                 <outputs/>
+                <languagesSupported/>
+            </capability>
+            <capability>
+                <inputs>
+                    <type>com.bole.parser.cv.Education.University</type>
+                </inputs>
+                <outputs>
+                    <type>com.bole.parser.cv.Education.University</type>
+                </outputs>
                 <languagesSupported/>
             </capability>
         </capabilities>

@@ -3,5 +3,6 @@
     <name>com.bole.parser.cv.MainTypeSystem</name>
     <imports>
         <import location="../../../../BasicTypeSystem.xml"/>
+        <import location="EducationTypeSystem.xml"/>
     </imports>
 </typeSystemDescription>

@@ -1,1 +1,5 @@
 PACKAGE com.bole.parser.cv;
+
+SCRIPT com.bole.parser.cv.Education;
+
+Document{->CALL(Education)};

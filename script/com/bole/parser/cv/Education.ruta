@@ -1,1 +1,7 @@
 PACKAGE com.bole.parser.cv;
+
+WORDLIST UniversityList = 'Universities.twl';
+
+DECLARE University;
+
+Document{->MARKFAST(University, UniversityList)};
