@@ -1,0 +1,12 @@
+PACKAGE com.bole.parser.cv;
+
+ENGINE utils.CVPreprocessingAnnotatorDescriptor;
+TYPESYSTEM utils.CVPreprocessingTypeSystem;
+
+DECLARE DateRange, DateStart, DateEnd, Email, Current;
+
+Document{->CALL(CVPreprocessingAnnotatorDescriptor)};
+
+Date "至" Date{->MARK(DateStart, 1, 1), MARK(DateEnd, 3, 3), MARK(DateRange, 1, 3)};
+Date "-" Date{->MARK(DateStart, 1, 1), MARK(DateEnd, 3, 3), MARK(DateRange, 1, 3)};
+Date "至" "今"{->MARK(DateStart, 1, 1), MARK(Current, 3, 3), MARK(DateRange, 1, 3)};

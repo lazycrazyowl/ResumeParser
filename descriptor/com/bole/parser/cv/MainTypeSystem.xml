@@ -3,6 +3,10 @@
     <name>com.bole.parser.cv.MainTypeSystem</name>
     <imports>
         <import location="../../../../BasicTypeSystem.xml"/>
+        <import location="PhoneTypeSystem.xml"/>
+        <import location="WorkHistoryTypeSystem.xml"/>
+        <import location="NameTypeSystem.xml"/>
+        <import location="DateRangeTypeSystem.xml"/>
         <import location="EducationTypeSystem.xml"/>
     </imports>
 </typeSystemDescription>

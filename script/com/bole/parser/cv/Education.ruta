@@ -1,7 +1,13 @@
 PACKAGE com.bole.parser.cv;
 
+SCRIPT com.bole.parser.cv.DateRange;
+
 WORDLIST UniversityList = 'Universities.twl';
+WORDLIST DegreeList = 'Degrees.twl';
 
-DECLARE University;
+DECLARE University, Education, Major, Degree;
 
+Document{->MARKFAST(Degree, DegreeList)};
 Document{->MARKFAST(University, UniversityList)};
+
+DateRange SPECIAL+? University{->MARK(Major, 2, 2)} Degree{-> MARK(Education, 1, 4)};

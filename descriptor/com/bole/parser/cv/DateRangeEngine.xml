@@ -190,7 +190,7 @@
             <nameValuePair>
                 <name>mainScript</name>
                 <value>
-                    <string>com.bole.parser.cv.Name</string>
+                    <string>com.bole.parser.cv.DateRange</string>
                 </value>
             </nameValuePair>
             <nameValuePair>
@@ -226,7 +226,9 @@
             <nameValuePair>
                 <name>additionalEngines</name>
                 <value>
-                    <array/>
+                    <array>
+                        <string>utils.CVPreprocessingAnnotatorDescriptor</string>
+                    </array>
                 </value>
             </nameValuePair>
             <nameValuePair>
@@ -243,42 +245,36 @@
             </nameValuePair>
         </configurationParameterSettings>
         <typeSystemDescription>
-            <name>com.bole.parser.cv.NameTypeSystem</name>
+            <name>com.bole.parser.cv.DateRangeTypeSystem</name>
             <imports>
                 <import location="../../../../BasicTypeSystem.xml"/>
+                <import location="../../../../utils/CVPreprocessingTypeSystem.xml"/>
             </imports>
             <types>
                 <typeDescription>
-                    <name>com.bole.parser.cv.Name.FirstName</name>
-                    <description>Type defined in com.bole.parser.cv.Name</description>
+                    <name>com.bole.parser.cv.DateRange.DateRange</name>
+                    <description>Type defined in com.bole.parser.cv.DateRange</description>
                     <supertypeName>uima.tcas.Annotation</supertypeName>
                 </typeDescription>
                 <typeDescription>
-                    <name>com.bole.parser.cv.Name.Name</name>
-                    <description>Type defined in com.bole.parser.cv.Name</description>
+                    <name>com.bole.parser.cv.DateRange.DateStart</name>
+                    <description>Type defined in com.bole.parser.cv.DateRange</description>
                     <supertypeName>uima.tcas.Annotation</supertypeName>
                 </typeDescription>
                 <typeDescription>
-                    <name>com.bole.parser.cv.Name.LastName</name>
-                    <description>Type defined in com.bole.parser.cv.Name</description>
+                    <name>com.bole.parser.cv.DateRange.DateEnd</name>
+                    <description>Type defined in com.bole.parser.cv.DateRange</description>
                     <supertypeName>uima.tcas.Annotation</supertypeName>
                 </typeDescription>
                 <typeDescription>
-                    <name>com.bole.parser.cv.Name.Age</name>
-                    <description>Type defined in com.bole.parser.cv.Name</description>
+                    <name>com.bole.parser.cv.DateRange.Email</name>
+                    <description>Type defined in com.bole.parser.cv.DateRange</description>
                     <supertypeName>uima.tcas.Annotation</supertypeName>
                 </typeDescription>
                 <typeDescription>
-                    <name>com.bole.parser.cv.Name.Gender</name>
-                    <description>Type defined in com.bole.parser.cv.Name</description>
-                    <supertypeName>org.apache.uima.ruta.type.SPECIAL</supertypeName>
-                    <features>
-                        <featureDescription>
-                            <name>Value</name>
-                            <description>Value</description>
-                            <rangeTypeName>uima.cas.String</rangeTypeName>
-                        </featureDescription>
-                    </features>
+                    <name>com.bole.parser.cv.DateRange.Current</name>
+                    <description>Type defined in com.bole.parser.cv.DateRange</description>
+                    <supertypeName>uima.tcas.Annotation</supertypeName>
                 </typeDescription>
             </types>
         </typeSystemDescription>
@@ -298,18 +294,18 @@
             </capability>
             <capability>
                 <inputs>
-                    <type>com.bole.parser.cv.Name.FirstName</type>
-                    <type>com.bole.parser.cv.Name.Name</type>
-                    <type>com.bole.parser.cv.Name.LastName</type>
-                    <type>com.bole.parser.cv.Name.Age</type>
-                    <type>com.bole.parser.cv.Name.Gender</type>
+                    <type>com.bole.parser.cv.DateRange.DateRange</type>
+                    <type>com.bole.parser.cv.DateRange.DateStart</type>
+                    <type>com.bole.parser.cv.DateRange.DateEnd</type>
+                    <type>com.bole.parser.cv.DateRange.Email</type>
+                    <type>com.bole.parser.cv.DateRange.Current</type>
                 </inputs>
                 <outputs>
-                    <type>com.bole.parser.cv.Name.FirstName</type>
-                    <type>com.bole.parser.cv.Name.Name</type>
-                    <type>com.bole.parser.cv.Name.LastName</type>
-                    <type>com.bole.parser.cv.Name.Age</type>
-                    <type>com.bole.parser.cv.Name.Gender</type>
+                    <type>com.bole.parser.cv.DateRange.DateRange</type>
+                    <type>com.bole.parser.cv.DateRange.DateStart</type>
+                    <type>com.bole.parser.cv.DateRange.DateEnd</type>
+                    <type>com.bole.parser.cv.DateRange.Email</type>
+                    <type>com.bole.parser.cv.DateRange.Current</type>
                 </outputs>
                 <languagesSupported/>
             </capability>

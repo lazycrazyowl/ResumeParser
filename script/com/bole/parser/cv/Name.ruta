@@ -1,1 +1,16 @@
 PACKAGE com.bole.parser.cv;
+
+WORDLIST LastNames = 'LastNames.twl';
+
+DECLARE FirstName, Name, LastName, Age;
+DECLARE SPECIAL Gender(STRING Value);
+
+Document{->MARKFAST(LastName, LastNames)};
+
+LastName SPECIAL[1,2]?{->MARK(FirstName, 2, 2), MARK(Name, 1, 2)} "（" "男"{->MARK(Gender, 4, 4)} "，" NUM{->MARK(Age, 6, 6)};
+LastName SPECIAL[1,2]?{->MARK(FirstName, 2, 2), MARK(Name, 1, 2)} "（" "女"{->MARK(Gender, 4, 4)} "，" NUM{->MARK(Age, 6, 6)};
+
+LastName{-AFTER(SPECIAL)} SPECIAL[1,2]?{->MARK(FirstName, 2, 2), MARK(Name, 1, 2)} BREAK;
+
+Gender{REGEXP("男") -> SETFEATURE("Value", "M")};
+Gender{REGEXP("女") -> SETFEATURE("Value", "F")};

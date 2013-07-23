@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDeploymentDescription xmlns="http://uima.apache.org/resourceSpecifier">
+	<name>Resume Parser</name>
+	<description>Deployment descriptor for resume parser</description>
+
+	<deployment protocol="jms" provider="activemq">
+		<service>
+			<inputQueue endpoint="ResumeParserQueue" brokerURL="${defaultBrokerURL}" />
+			<topDescriptor>
+				<import location="ResumeParserTopAnalysisEngine.xml" />
+			</topDescriptor>
+		</service>
+	</deployment>
+</analysisEngineDeploymentDescription>

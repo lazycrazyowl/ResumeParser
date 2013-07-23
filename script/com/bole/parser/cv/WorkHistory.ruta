@@ -1,1 +1,7 @@
 PACKAGE com.bole.parser.cv;
+
+WORDLIST RoleList = 'Roles.twl';
+
+DECLARE Role;
+
+Document{->MARKFAST(Role, RoleList)};

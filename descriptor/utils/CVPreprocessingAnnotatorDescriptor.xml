@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>true</primitive>
+  <annotatorImplementationName>org.apache.uima.annotator.regex.impl.RegExAnnotator</annotatorImplementationName>
+  <analysisEngineMetaData>
+    <name>RegExAnnotator</name>
+    <description>Matches regular expressions in document text.</description>
+    <configurationParameters>
+      <configurationParameter>
+        <name>ConceptFiles</name>
+        <description>list of concept files to configure the annotator</description>
+        <type>String</type>
+        <multiValued>true</multiValued>
+        <mandatory>true</mandatory>
+      </configurationParameter>
+    </configurationParameters>
+    <configurationParameterSettings>
+      <nameValuePair>
+        <name>ConceptFiles</name>
+        <value>
+          <array>
+            <string>concepts.xml</string>
+          </array>
+        </value>
+      </nameValuePair>
+    </configurationParameterSettings>
+    <typeSystemDescription>
+      <name>utils.CVPreprocessingTypeSystem</name>
+      <imports>
+        <import location="CVPreprocessingTypeSystem.xml"/>
+      </imports>
+    </typeSystemDescription>
+    <capabilities>
+      <capability>
+        <inputs/>
+        <outputs>
+          <type allAnnotatorFeatures="true">com.bole.parser.cv.Date</type>
+          <type allAnnotatorFeatures="true">com.bole.parser.cv.EmailAddress</type>
+        </outputs>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+    <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <resourceManagerConfiguration/>
+</analysisEngineDescription>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>com.bole.parser.cv.DateRangeTypeSystem</name>
+    <imports>
+        <import location="../../../../BasicTypeSystem.xml"/>
+        <import location="../../../../utils/CVPreprocessingTypeSystem.xml"/>
+    </imports>
+    <types>
+        <typeDescription>
+            <name>com.bole.parser.cv.DateRange.DateRange</name>
+            <description>Type defined in com.bole.parser.cv.DateRange</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>com.bole.parser.cv.DateRange.DateStart</name>
+            <description>Type defined in com.bole.parser.cv.DateRange</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>com.bole.parser.cv.DateRange.DateEnd</name>
+            <description>Type defined in com.bole.parser.cv.DateRange</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>com.bole.parser.cv.DateRange.Email</name>
+            <description>Type defined in com.bole.parser.cv.DateRange</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>com.bole.parser.cv.DateRange.Current</name>
+            <description>Type defined in com.bole.parser.cv.DateRange</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+    </types>
+</typeSystemDescription>

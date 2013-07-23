@@ -3,10 +3,26 @@
     <name>com.bole.parser.cv.EducationTypeSystem</name>
     <imports>
         <import location="../../../../BasicTypeSystem.xml"/>
+        <import location="DateRangeTypeSystem.xml"/>
     </imports>
     <types>
         <typeDescription>
             <name>com.bole.parser.cv.Education.University</name>
+            <description>Type defined in com.bole.parser.cv.Education</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>com.bole.parser.cv.Education.Education</name>
+            <description>Type defined in com.bole.parser.cv.Education</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>com.bole.parser.cv.Education.Major</name>
+            <description>Type defined in com.bole.parser.cv.Education</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>com.bole.parser.cv.Education.Degree</name>
             <description>Type defined in com.bole.parser.cv.Education</description>
             <supertypeName>uima.tcas.Annotation</supertypeName>
         </typeDescription>

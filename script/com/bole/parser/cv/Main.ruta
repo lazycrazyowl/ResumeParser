@@ -1,5 +1,15 @@
 PACKAGE com.bole.parser.cv;
 
+SCRIPT com.bole.parser.cv.DateRange;
+SCRIPT com.bole.parser.cv.Name;
+SCRIPT com.bole.parser.cv.Phone;
 SCRIPT com.bole.parser.cv.Education;
+SCRIPT com.bole.parser.cv.WorkHistory;
 
+Document{->CALL(DateRange)};
+Document{->RETAINTYPE(BREAK), CALL(Name)};
+
+Document{->REMOVERETAINTYPE(BREAK)};
+Document{->CALL(Phone)};
 Document{->CALL(Education)};
+Document{->CALL(WorkHistory)};

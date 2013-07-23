@@ -221,6 +221,10 @@
                 <name>additionalScripts</name>
                 <value>
                     <array>
+                        <string>com.bole.parser.cv.Phone</string>
+                        <string>com.bole.parser.cv.WorkHistory</string>
+                        <string>com.bole.parser.cv.Name</string>
+                        <string>com.bole.parser.cv.DateRange</string>
                         <string>com.bole.parser.cv.Education</string>
                     </array>
                 </value>
@@ -248,6 +252,10 @@
             <name>com.bole.parser.cv.MainTypeSystem</name>
             <imports>
                 <import location="../../../../BasicTypeSystem.xml"/>
+                <import location="PhoneTypeSystem.xml"/>
+                <import location="WorkHistoryTypeSystem.xml"/>
+                <import location="NameTypeSystem.xml"/>
+                <import location="DateRangeTypeSystem.xml"/>
                 <import location="EducationTypeSystem.xml"/>
             </imports>
         </typeSystemDescription>

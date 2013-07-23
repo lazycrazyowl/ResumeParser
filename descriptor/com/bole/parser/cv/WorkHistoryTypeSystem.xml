@@ -4,4 +4,11 @@
     <imports>
         <import location="../../../../BasicTypeSystem.xml"/>
     </imports>
+    <types>
+        <typeDescription>
+            <name>com.bole.parser.cv.WorkHistory.Role</name>
+            <description>Type defined in com.bole.parser.cv.WorkHistory</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+    </types>
 </typeSystemDescription>

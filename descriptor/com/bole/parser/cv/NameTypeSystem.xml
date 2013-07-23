@@ -4,4 +4,38 @@
     <imports>
         <import location="../../../../BasicTypeSystem.xml"/>
     </imports>
+    <types>
+        <typeDescription>
+            <name>com.bole.parser.cv.Name.FirstName</name>
+            <description>Type defined in com.bole.parser.cv.Name</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>com.bole.parser.cv.Name.Name</name>
+            <description>Type defined in com.bole.parser.cv.Name</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>com.bole.parser.cv.Name.LastName</name>
+            <description>Type defined in com.bole.parser.cv.Name</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>com.bole.parser.cv.Name.Age</name>
+            <description>Type defined in com.bole.parser.cv.Name</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>com.bole.parser.cv.Name.Gender</name>
+            <description>Type defined in com.bole.parser.cv.Name</description>
+            <supertypeName>org.apache.uima.ruta.type.SPECIAL</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>Value</name>
+                    <description>Value</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+    </types>
 </typeSystemDescription>
