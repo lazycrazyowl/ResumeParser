@@ -4,10 +4,12 @@ SCRIPT com.bole.parser.cv.DateRange;
 
 WORDLIST UniversityList = 'Universities.twl';
 WORDLIST DegreeList = 'Degrees.twl';
+WORDLIST UniversityEnds = 'UniversityEnds.twl';
 
-DECLARE University, Education, Major, Degree;
+DECLARE University, Education, Major, Degree, UniversityEnd;
 
 Document{->MARKFAST(Degree, DegreeList)};
 Document{->MARKFAST(University, UniversityList)};
+Document{->MARKFAST(UniversityEnd, UniversityEnds)};
 
 DateRange SPECIAL+? University{->MARK(Major, 2, 2)} Degree{-> MARK(Education, 1, 4)};

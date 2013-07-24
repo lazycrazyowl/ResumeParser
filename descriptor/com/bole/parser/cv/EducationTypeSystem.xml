@@ -26,5 +26,10 @@
             <description>Type defined in com.bole.parser.cv.Education</description>
             <supertypeName>uima.tcas.Annotation</supertypeName>
         </typeDescription>
+        <typeDescription>
+            <name>com.bole.parser.cv.Education.UniversityEnd</name>
+            <description>Type defined in com.bole.parser.cv.Education</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
     </types>
 </typeSystemDescription>

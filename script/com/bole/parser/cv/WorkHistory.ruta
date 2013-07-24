@@ -1,7 +1,18 @@
 PACKAGE com.bole.parser.cv;
 
-WORDLIST RoleList = 'Roles.twl';
+SCRIPT com.bole.parser.cv.Education;
 
-DECLARE Role;
+WORDLIST RoleList = 'Roles.twl';
+WORDLIST CompaniesList = 'Companies.twl';
+WORDLIST CompanyEnds = 'CompanyEnds.twl';
+
+DECLARE Role, Company, CompanyEnd, WorkHistory;
 
 Document{->MARKFAST(Role, RoleList)};
+Document{->MARKFAST(Company, CompaniesList)};
+Document{->MARKFAST(CompanyEnd, CompanyEnds)};
+
+DateRange Role Company{->MARK(WorkHistory, 1, 3)};
+DateRange SPECIAL+?{->MARK(Role, 2, 2)} University SPECIAL+? UniversityEnd{->MARK(Company, 3, 5), MARK(WorkHistory, 1, 5)};
+DateRange Role CAP SPECIAL+? CompanyEnd{->MARK(Company, 3, 5), MARK(WorkHistory, 1, 5)};
+DateRange Role SPECIAL+? CompanyEnd{->MARK(Company, 3, 4), MARK(WorkHistory, 1, 4)};

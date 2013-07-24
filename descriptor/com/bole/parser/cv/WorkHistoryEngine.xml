@@ -220,7 +220,9 @@
             <nameValuePair>
                 <name>additionalScripts</name>
                 <value>
-                    <array/>
+                    <array>
+                        <string>com.bole.parser.cv.Education</string>
+                    </array>
                 </value>
             </nameValuePair>
             <nameValuePair>
@@ -246,10 +248,26 @@
             <name>com.bole.parser.cv.WorkHistoryTypeSystem</name>
             <imports>
                 <import location="../../../../BasicTypeSystem.xml"/>
+                <import location="EducationTypeSystem.xml"/>
             </imports>
             <types>
                 <typeDescription>
                     <name>com.bole.parser.cv.WorkHistory.Role</name>
+                    <description>Type defined in com.bole.parser.cv.WorkHistory</description>
+                    <supertypeName>uima.tcas.Annotation</supertypeName>
+                </typeDescription>
+                <typeDescription>
+                    <name>com.bole.parser.cv.WorkHistory.Company</name>
+                    <description>Type defined in com.bole.parser.cv.WorkHistory</description>
+                    <supertypeName>uima.tcas.Annotation</supertypeName>
+                </typeDescription>
+                <typeDescription>
+                    <name>com.bole.parser.cv.WorkHistory.CompanyEnd</name>
+                    <description>Type defined in com.bole.parser.cv.WorkHistory</description>
+                    <supertypeName>uima.tcas.Annotation</supertypeName>
+                </typeDescription>
+                <typeDescription>
+                    <name>com.bole.parser.cv.WorkHistory.WorkHistory</name>
                     <description>Type defined in com.bole.parser.cv.WorkHistory</description>
                     <supertypeName>uima.tcas.Annotation</supertypeName>
                 </typeDescription>
@@ -272,9 +290,15 @@
             <capability>
                 <inputs>
                     <type>com.bole.parser.cv.WorkHistory.Role</type>
+                    <type>com.bole.parser.cv.WorkHistory.Company</type>
+                    <type>com.bole.parser.cv.WorkHistory.CompanyEnd</type>
+                    <type>com.bole.parser.cv.WorkHistory.WorkHistory</type>
                 </inputs>
                 <outputs>
                     <type>com.bole.parser.cv.WorkHistory.Role</type>
+                    <type>com.bole.parser.cv.WorkHistory.Company</type>
+                    <type>com.bole.parser.cv.WorkHistory.CompanyEnd</type>
+                    <type>com.bole.parser.cv.WorkHistory.WorkHistory</type>
                 </outputs>
                 <languagesSupported/>
             </capability>
